@@ -14,7 +14,7 @@ OU
 en fonction de la valeur de la propriété `isVegetarian`, en remplaçant FOOD
 par le nom du produit
 
-Exemple d'entrée:
+Exemple d'entrée:                                                                                                               vvvv
   [
     {
       food: 'Bacon',
@@ -43,6 +43,14 @@ En sortie: [
  */
 
 function getFoodCategories(foods) {
+  return foods.map(trucamanger => {
+    if (trucamanger.isVegetarian ===true){
+    return trucamanger.food + " is suitable for vegetarians"
+  } else {
+      return trucamanger.food + " is not suitable for vegetarians"
+  }
+}
+  )
 }
 
 

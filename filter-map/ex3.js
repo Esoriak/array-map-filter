@@ -51,6 +51,9 @@ Sortie attendue:
 */
 
 function getStudentsPerCurriculum(campuses, curriculumName) {
-}
+  return campuses.filter(function (curriculumName) {
+    return campuses.curriculumName.includes('PHP/Symfony')
+ 
+},
 
 module.exports = getStudentsPerCurriculum;
